@@ -1,0 +1,36 @@
+.login_heading{
+  color: #834B96;
+  ;
+}
+.login_left{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding-left: 5%;
+  padding-right: 3%;
+}
+
+.login_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-gap: 1rem;
+  /* background-color: red; */
+
+}
+
+.form_control{
+  display: flex;
+  flex-direction: column;
+}
+
+.login_input{
+  border-radius: 20px;
+  padding: 0.4rem;
+  border: none;
+
+}
+
+.login_input:focus{
+  outline-color: #834B96;
+}

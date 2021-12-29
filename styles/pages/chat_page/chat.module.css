@@ -1,0 +1,24 @@
+
+
+.message_list{
+  width: 30%;
+}
+
+.main_chat{
+  width: 70%;
+  overflow:hidden;
+  background-color: white;
+  height: 100vh;
+}
+
+
+.chat_input_div{
+  position: absolute;
+  bottom: 0;
+  width:max-content;
+  width: 55vw;
+}
+
+.chat_input{
+  width: 100%;
+}
