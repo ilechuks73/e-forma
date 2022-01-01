@@ -40,3 +40,19 @@ a {
 .lh-0{
   line-height: 0;
 }
+
+.h-100-p{
+  height: 100%;
+}
+
+.h-80-p{
+  height: 80%;
+}
+
+.h-max-content{
+  height: max-content;
+}
+
+.outline-0{
+  outline: 0
+}
