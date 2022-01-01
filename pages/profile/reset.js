@@ -9,7 +9,7 @@ function Reset(){
   return(
     <Fragment>
       <Head>
-
+        
       </Head>
       <main className="background_primary text-dark  p-lg-0 pt-lg-3 text-center text-sm-start">
         <div className="">

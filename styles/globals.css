@@ -32,3 +32,11 @@ a {
   grid-gap: 1rem;
 
 }
+
+.bg-white{
+  background-color: white;
+}
+
+.lh-0{
+  line-height: 0;
+}
