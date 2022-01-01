@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+//import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
                 height: "min-content"
               }}
             >
-              <PlayCircleOutlineIcon />
+              {/* <PlayCircleOutlineIcon /> */}
             </button>
             <button className={"btn"}>Watch Demo</button>
           </div>
