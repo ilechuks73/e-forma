@@ -1,32 +1,34 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { useRouter } from 'next/router'
-
-
-import { Header } from '../components'
-
+import Head from "next/head";
+import Link from "next/link";
+// import style from '../styles/login.module.css';
+// import loginImage from '../public/assets/image/login1.png';
+// import BasicButton from "../../components/Utility/buttons/BasicButton";
+import styles from './styles.module.css'
+import { Header } from "../../components";
 
 import {
-  Button as MuiButton,
-  IconButton as MuiIconButton,
-  Paper as MuiPaper,
+  Grid as MuiGrid,
   Typography as MuiTypography,
-  Grid as MuiGrid
-} from '@material-ui/core'
+  TextField as MuiTextField,
+  InputBase as MuiInputBase,
+  IconButton as MuiIconButton,
+  InputAdornment as MuiInputAdornment,
+  Button as MuiButton
+} from "@material-ui/core"
+
 import {
+  Search as SearchIcon,
+  Visibility as VisibilityIcon,
   PlayCircleOutline as PlayCircleOutlineIcon
 } from '@material-ui/icons';
 
-
-export default function Home() {
-  const router = useRouter()
+export default function home() {
   return (
     <div className={"container-fluid bg-light"}>
       <Header />
       <MuiGrid container={true} justifyContent={"center"} className={"g-0 align-content-center vh-100"}>
         <MuiGrid item={true} xs={5}>
-          <MuiTypography variant={"h2"} className={"display-3 fw-bold my-5"}>Find out talented freelancer with better reviews faster</MuiTypography>
-          <MuiTypography variant={"h6"} className={"my-5"}>Lorem ipsum dolor sit amet, consetteur adsciping elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</MuiTypography>
+          <MuiTypography variant={"h2"} className={"display-3 fw-bold my-5"}>Find your dream jobs easily</MuiTypography>
           <MuiGrid container={true} className={"my-5"}>
             <MuiButton
               size={"large"}
@@ -64,5 +66,6 @@ export default function Home() {
 
 
     </div>
+
   )
 }

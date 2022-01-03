@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router';
 import {
   AppBar as MuiAppBar,
   Button as MuiButton,
@@ -13,14 +14,17 @@ import {
   Search as SearchIcon
 } from '@material-ui/icons';
 
+import styles from './styles.module.css'
+
 
 function Header(props) {
+  const router = useRouter()
   return (
     <MuiAppBar
-      elevation={false}
+      elevation={0}
       className={"bg-light"}
       style={{
-        height: "60px"
+        height: "80px"
       }}
     >
       <MuiGrid
@@ -53,7 +57,7 @@ function Header(props) {
         </MuiGrid>
         <MuiGrid>
           <MuiInputBase
-            className={"bg-white rounded-pill px-3 mx-4 h-100-p"}
+            className={`bg-white rounded-pill px-3 mx-4 h-100-p ${styles.input1}`}
             endAdornment={
               <MuiInputAdornment position="end">
                 <SearchIcon />
@@ -61,16 +65,18 @@ function Header(props) {
             }
           />
           <MuiButton
-            color={"primary"}
+            disableElevation={true}
             variant={'contained'}
-            className={"rounded-pill mx-4"}
+            className={`rounded-pill mx-4 px-3 ${styles.button1}`}
+            onClick={()=>{
+              router.push("/login")
+            }}
           >
             {"Log In"}
           </MuiButton>
           <MuiButton
-            color={"secondary"}
             variant={'contained'}
-            className={"rounded-pill mx-4"}
+            className={`rounded-pill mx-4 px-3 text-white fw-bold ${styles.button2}`}
           >
             {"Sign Up"}
           </MuiButton>
