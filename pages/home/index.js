@@ -22,7 +22,7 @@ import {
   PlayCircleOutline as PlayCircleOutlineIcon
 } from '@material-ui/icons';
 
-export default function home() {
+export default function Home() {
   return (
     <div className={"container-fluid bg-light"}>
       <Header />

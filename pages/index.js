@@ -18,7 +18,7 @@ import {
 } from '@material-ui/icons';
 
 
-export default function Home() {
+export default function Landing() {
   const router = useRouter()
   return (
     <div className={"container-fluid bg-light"}>
