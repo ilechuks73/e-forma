@@ -1,18 +1,4 @@
-import Head from "next/head";
-import Link from "next/link";
-import { Fragment } from "react/cjs/react.production.min";
-import style from '../styles/login.module.css';
-import loginImage from '../public/assets/image/login1.png';
-import BasicButton from "../components/Utility/buttons/BasicButton";
-
-
-function login(){
-  return(
-    <Fragment>
-      <Head>
-
-      </Head>
-      <main className="background_primary text-dark  p-lg-0 pt-lg-3 text-center text-sm-start">
+{/* <main className="background_primary text-dark  p-lg-0 pt-lg-3 text-center text-sm-start">
         <div className="">
           <div className="d-sm-flex align-items-start justify-content-between">
             <div className={style.login_left}>
@@ -43,9 +29,4 @@ function login(){
               
           </div> */}
         </div>
-      </main>
-    </Fragment>
-  );
-}
-
-export default login;
+      </main> */}

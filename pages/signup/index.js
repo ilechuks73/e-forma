@@ -1,3 +1,4 @@
+import {Fragment } from 'react'
 import Head from 'next/head';
 
 function Signup(){
@@ -13,7 +14,7 @@ function Signup(){
         <form>
           <h1>Signup</h1>
           <div>
-            <lable for='name'>Name</lable>
+            <label htmlFor='name'>Name</label>
             <input id='name' className='' />
           </div>
           <div>
@@ -35,7 +36,7 @@ function Signup(){
             {/* Login with facebook goes here */}
           </div>
         </form>
-        <p>Do you have account alread? <Link href='/login'>Login here.</Link></p>
+        <p>Do you have account alread?</p>
        </div>
        <div className='signup-left'>
         {/* Image goes here. */}

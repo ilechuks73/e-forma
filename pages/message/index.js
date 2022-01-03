@@ -26,7 +26,7 @@ function message(props){
                 </textarea>
                 <span>
                   <span>Send</span>
-                  <i class="fas fa-arrow-circle-up"></i>
+                  <i className="fas fa-arrow-circle-up"></i>
                 </span>
               </div>
             </div>

@@ -4,7 +4,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #F0F2F7;
 }
 
 a {
@@ -31,4 +30,28 @@ a {
   flex-direction: row;
   grid-gap: 1rem;
 
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.lh-0{
+  line-height: 0;
+}
+
+.h-100-p{
+  height: 100%;
+}
+
+.h-80-p{
+  height: 80%;
+}
+
+.h-max-content{
+  height: max-content;
+}
+
+.outline-0{
+  outline: 0
 }
