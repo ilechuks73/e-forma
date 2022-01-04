@@ -85,7 +85,7 @@ export default function Home() {
                 {
                   ["tedf gdfgdf gfdgst","tegfgst","test","tegst","test","tegfhdst","test","tesdfsft","tedsst","test" ].map((item, index)=>{
                     return(
-                      <MuiChip variant={"outlined"}  label={item} className={"mx-3 my-2 px-3 py-3 fs-6"}/>
+                      <MuiChip key={index} variant={"outlined"}  label={item} className={"mx-3 my-2 px-3 py-3 fs-6"}/>
                     )
                   })
                 }
