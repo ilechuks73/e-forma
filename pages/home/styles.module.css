@@ -1,0 +1,19 @@
+.MuiButton1{
+  background-color: #fe8d4d !important;
+}
+
+.MuiGrid1{
+  height: 70px;
+}
+
+.MuiSelect1{
+  width: 180px;
+}
+
+.MuiSelect1::before{
+  border: none !important;
+}
+
+.MuiSelect1::after{
+  border: none !important;
+}
