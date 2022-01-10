@@ -16,7 +16,12 @@ import {
   Button as MuiButton,
   Select as MuiSelect,
   MenuItem as MuiMenuItem,
-  Chip as MuiChip
+  Chip as MuiChip,
+  Table as MuiTable,
+  TableBody as MuiTableBody,
+  TableRow as MuiTableRow,
+  TableHead as MuiTableHead,
+  TableCell as MuiTableCell
 } from "@material-ui/core"
 
 import {
@@ -30,7 +35,7 @@ export default function Home() {
   return (
     <div className={"container-fluid bg-light"}>
       <Header />
-      <MuiGrid container={true} justifyContent={"center"} className={"g-0 align-content-center vh-100"}>
+      <MuiGrid container={true} justifyContent={"center"} className={"g-0 py-5 align-content-center min-vh-100"}>
         <MuiGrid item={true} xs={5}>
           <MuiTypography variant={"h2"} className={"display-3 fw-bold my-5"}>Find your dream jobs easily</MuiTypography>
           <MuiGrid container={true} className={`bg-white my-5 p-2 rounded-pill ${styles.MuiGrid1}`}>
@@ -53,7 +58,7 @@ export default function Home() {
                 value={"Location"}
                 className={`h-100 border-0 ${styles.MuiSelect1}`}
                 startAdornment={
-                  <MuiInputAdornment>
+                  <MuiInputAdornment position={"start"}>
                     <LocationOnIcon
                       color={"primary"}
                       className={"fs-2"}
@@ -61,7 +66,8 @@ export default function Home() {
                   </MuiInputAdornment>
                 }
               >
-
+                <MuiMenuItem value={"Location"} className={"d-none"}>Location</MuiMenuItem>
+                <MuiMenuItem value={"fion"} className={""}>Locfefation</MuiMenuItem>
               </MuiSelect>
             </MuiGrid>
             <MuiGrid
@@ -82,13 +88,16 @@ export default function Home() {
             </MuiGrid>
           </MuiGrid>
           <MuiGrid container={true}>
-                {
-                  ["tedf gdfgdf gfdgst","tegfgst","test","tegst","test","tegfhdst","test","tesdfsft","tedsst","test" ].map((item, index)=>{
-                    return(
-                      <MuiChip key={index} variant={"outlined"}  label={item} className={"mx-3 my-2 px-3 py-3 fs-6"}/>
-                    )
-                  })
-                }
+            {
+              ["tedf gdfgdf gfdgst", "tegfgst", "test", "tegst", "test", "tegfhdst", "test", "tesdfsft", "tedsst", "test"].map((item, index) => {
+                return (
+                  <MuiChip key={index} variant={"outlined"} label={item} className={"rounded-pill mx-3 my-2 px-3 py-4 fs-6"} />
+                )
+              })
+            }
+          </MuiGrid>
+          <MuiGrid>
+            <MuiChip variant={"outlined"} label={"See all categories"} className={"text-primary rounded-pill border-primary mx-3 my-3 px-3 py-4 fs-6"} />
           </MuiGrid>
         </MuiGrid>
         <MuiGrid container={true} justifyContent={"center"} item={true} xs={5}>
@@ -97,8 +106,22 @@ export default function Home() {
           </MuiGrid>
 
         </MuiGrid>
+
       </MuiGrid>
 
+      <MuiGrid container={true} className={`mt-5 mb-4`} justifyContent={"center"}>
+        <MuiGrid item={true} xs={10}>
+          <MuiTable>
+            <MuiTableBody>
+              <MuiTableRow>
+                <MuiTableCell>data</MuiTableCell>
+                <MuiTableCell>data</MuiTableCell>
+                <MuiTableCell>data</MuiTableCell>
+              </MuiTableRow>
+            </MuiTableBody>
+          </MuiTable>
+        </MuiGrid>
+      </MuiGrid>
 
     </div >
 

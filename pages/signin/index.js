@@ -21,7 +21,7 @@ import {
 } from '@material-ui/icons';
 
 
-export default function Login() {
+export default function Signin() {
   const router = useRouter()
   return (
     <MuiGrid container={true} className={"vh-100 bg-light"}>
