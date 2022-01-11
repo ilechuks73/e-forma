@@ -69,7 +69,7 @@ function Header(props) {
             variant={'contained'}
             className={`rounded-pill mx-4 px-3 ${styles.button1}`}
             onClick={()=>{
-              router.push("/login")
+              router.push("/signin")
             }}
           >
             {"Log In"}

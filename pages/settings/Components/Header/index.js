@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function general() {
+export default function Header() {
   return (
     <div>
-      test
+      
     </div>
   )
 }
-

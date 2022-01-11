@@ -11,14 +11,15 @@ import {
   IconButton as MuiIconButton,
   Paper as MuiPaper,
   Typography as MuiTypography,
-  Grid as MuiGrid
+  Grid as MuiGrid,
+  Select as MuiSelect
 } from '@material-ui/core'
 import {
   PlayCircleOutline as PlayCircleOutlineIcon
 } from '@material-ui/icons';
 
 
-export default function Home() {
+export default function Landing() {
   const router = useRouter()
   return (
     <div className={"container-fluid bg-light"}>
